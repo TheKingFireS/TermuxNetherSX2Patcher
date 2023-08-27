@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Installing aapt and apksigner
 pkg upgrade -y
-pkg install aapt2 apksigner git -y
+pkg install git -y
 termux-setup-storage
 ln -s /storage/emulated/0/NetherSX2 /data/data/com.termux/files/home/storage/NetherSX2
 git clone https://github.com/Trixarian/NetherSX2-patch.git
