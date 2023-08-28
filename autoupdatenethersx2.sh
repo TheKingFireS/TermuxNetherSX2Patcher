@@ -4,4 +4,4 @@ cd NetherSX2-patch || exit
 git pull https://github.com/Trixarian/NetherSX2-patch.git -b main
 ./remove-adservices.sh
 ./update-files.sh
-cp 15210-v1.5-4248-noads.apk ~/storage/NetherSX2/15210-v1.5-4248-noads-patched.apk
+cp 15210-v1.5-4248-noads.apk /storage/emulated/0/NetherSX2/15210-v1.5-4248-noads-patched.apk
