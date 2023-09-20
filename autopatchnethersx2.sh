@@ -1,7 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Installing aapt, git and cloning repo.
-pkg upgrade -y
-pkg install aapt git -y # it will uninstall some package due to crappy packages maintainer practice.
+if [ -d "$HOME/storage" ]; then
+	echo "termux-setup-storage has already ran before, all goods."
+else
+	termux-setup-storage
+fi
+pkg upgrade -y -o Dpkg::Options::="--force-confold"
+pkg install aapt apksigner git -y
 git clone https://github.com/Trixarian/NetherSX2-patch.git
 cd NetherSX2-patch || exit
 cp /storage/emulated/0/NetherSX2/15210-v1.5-4248-noads.apk 15210-v1.5-4248-noads.apk
