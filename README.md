@@ -1,9 +1,9 @@
 # TermuxNetherSX2Patcher
-### NOTE: You have to run aethersx2-full.sh first from [AetherSX2 Fan Community Discord](https://discord.gg/V68Xt5Pyfk) before perform this operation!!! 
+### NOTE: This is independant branch, which doesn't need run ``aethersx2-full.sh`` to perform this operation.
 ## Patching NetherSX2:
 **Simply, run these commands.**
 ```bash
-curl -LO "https://raw.githubusercontent.com/TheKingFireS/TermuxNetherSX2Patcher/main/autopatchnethersx2.sh"
+curl -LO "https://raw.githubusercontent.com/TheKingFireS/TermuxNetherSX2Patcher/independant/autopatchnethersx2.sh"
 chmod +x autopatchnethersx2.sh
 ./autopatchnethersx2.sh
 ```
@@ -15,7 +15,7 @@ Try again run ``./autopatchnethersx2.sh``
 ## Updating patched NetherSX2:
 **Simply, run these commands.**
 ```bash
-curl -LO "https://raw.githubusercontent.com/TheKingFireS/TermuxNetherSX2Patcher/main/autoupdatenethersx2.sh"
+curl -LO "https://raw.githubusercontent.com/TheKingFireS/TermuxNetherSX2Patcher/independant/autoupdatenethersx2.sh"
 chmod +x autoupdatenethersx2.sh
 ./autoupdatenethersx2.sh
 ```
