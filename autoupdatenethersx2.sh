@@ -1,5 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Update patch
+if [ -d "$HOME/storage" ]; then
+	echo "termux-setup-storage has already ran before, all goods."
+else
+	termux-setup-storage
+fi
 cd NetherSX2-patch || exit
 rm patch-apk.sh update-files.sh
 git pull https://github.com/Trixarian/NetherSX2-patch.git main
