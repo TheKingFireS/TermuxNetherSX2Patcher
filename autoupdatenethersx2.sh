@@ -7,6 +7,7 @@ fi
 wget "https://github.com/Trixarian/NetherSX2-patch/releases/download/1.6/NetherSX2-patch.zip"
 unzip NetherSX2-patch.zip
 rm NetherSX2-patch.zip
+cd NetherSX2-patch || exit
 chmod +x update-files.sh patch-apk.sh
 ./update-files.sh
 cp 15210-v1.5-4248-noads.apk /storage/emulated/0/NetherSX2/15210-v1.5-4248-noads-patched.apk
