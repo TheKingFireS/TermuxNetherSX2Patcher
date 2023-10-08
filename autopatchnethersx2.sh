@@ -1,8 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
-# Installing aapt, git and cloning repo.
+# Installing aapt, wget and cloning repo.
 pkg upgrade -y
-pkg install aapt git -y # it will uninstall some package due to crappy packages maintainer practice.
-git clone https://github.com/Trixarian/NetherSX2-patch.git
+pkg install aapt wget -y # it will uninstall some package due to crappy packages maintainer practice.
+wget "https://github.com/Trixarian/NetherSX2-patch/releases/download/1.6/NetherSX2-patch.zip"
+unzip NetherSX2-patch.zip
+rm NetherSX2-patch.zip
 cd NetherSX2-patch || exit
 cp /storage/emulated/0/NetherSX2/15210-v1.5-4248-noads.apk 15210-v1.5-4248-noads.apk
 chmod +x patch-apk.sh
