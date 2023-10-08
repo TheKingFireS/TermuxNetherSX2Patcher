@@ -2,7 +2,7 @@
 # Update patch
 if [ "$(pwd)" == "/data/data/com.termux/files/home/NetherSX2-patch" ]; then
 	mv autoupdatenethersx2.sh ../autoupdatenethersx2.sh
-	printf "\e[1;91mPlease run "cd .." before try again run "./autoupdatenethersx2.sh"!\e[0m\n"
+	printf "\e[1;91mPlease run 'cd ..' before you can run './autoupdatenethersx2.sh'!\e[0m\n"
 	exit 1
 fi
 wget "https://github.com/Trixarian/NetherSX2-patch/releases/download/1.6/NetherSX2-patch.zip"
