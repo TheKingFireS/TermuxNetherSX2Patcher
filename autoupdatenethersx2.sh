@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Update patch
 if [ "$(pwd)" == "/data/data/com.termux/files/home/NetherSX2-patch" ]; then
-	printf "\e[1;91mPlease run 'cd ..' before you can run './autoupdatenethersx2.sh'!\e[0m\n"
+	printf "\e[1;91mPlease run cd .. before you can run ./autoupdatenethersx2.sh !\e[0m\n"
  	mv autoupdatenethersx2.sh ../autoupdatenethersx2.sh
 	exit 1
 fi
